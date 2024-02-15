@@ -5,7 +5,7 @@ int main(){
     int a,b,c;
     a= 5;
     b= 10;
-    c= 25;
+    c= 20;
     int largest;
     if(a >= b && a >= c)
     {

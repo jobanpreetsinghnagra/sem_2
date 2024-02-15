@@ -6,10 +6,7 @@ int main() {
     int  pos, i, n, value;
     cout << "Enter number of elements in array\n";
     cin >> n;
-    cout << "Enter " << n << " elements\n";
 
-    for (i = 0; i < n; i++)
-        cin >> arr[i];
 
     cout << "Enter the location where you wish to insert an element\n";
     cin >> pos;
@@ -17,9 +14,9 @@ int main() {
     cout << "Enter the value to insert\n";
     cin >> value;
 
-    for (i = n - 1; i >= pos - 1; i--)
+    for (i = n - 1; i >= pos - 1; i--){
         arr[i+1] = arr[i];
-
+    }
     arr[pos-1] = value;
 
     cout << "Resultant array is\n";
